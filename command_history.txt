@@ -1,0 +1,200 @@
+    1  clear
+    2  ls
+    3  exit
+    4  cat /proc/asound/cards
+    5  aplay -l
+    6  sudo apt update && sudo apt upgrade 
+    7  ckear
+    8  clear
+    9  sudo apt install alsa-utils
+   10  ls
+   11  git
+   12  clear
+   13  git clone https://github.com/dgslomin/divs-midi-utilities.git
+   14  ls
+   15  cd divs-midi-utilities/
+   16  ls
+   17  cd src/
+   18  ls
+   19  make
+   20  sudo apt install make 
+   21  ls
+   22  make
+   23  ls
+   24  clear
+   25  ls
+   26  cat Makefile.unix 
+   27  clear
+   28  ls
+   29  make all -f Makefile.unix 
+   30  gcc
+   31  sudo apt install gcc
+   32  cd lsmidiins/
+   33  clear
+   34  ls
+   35  cat lsmidiins.c 
+   36  clear
+   37  ls
+   38  make -f Makefile.unix 
+   39  ls
+   40  cd ..
+   41  ls
+   42  cd 3rdparty/
+   43  ls
+   44  cd rtmidi/
+   45  ls
+   46  cat README.md 
+   47  clear
+   48  ls
+   49  cat RtMidi.
+   50  cat RtMidi.cpp 
+   51  head RtMidi.
+   52  head RtMidi.cpp 
+   53  clear
+   54  ls
+   55  cd ../../
+   56  cd ..
+   57  ls
+   58  cd docs/
+   59  ls
+   60  open readme.html 
+   61  cd ../src/
+   62  clear
+   63  make clean
+   64  make clean -f Makefile.unix 
+   65  clear
+   66  make all
+   67  make all -f Makefile.unix 
+   68  ls
+   69  cd ..
+   70  ls
+   71  mkdir bin
+   72  ls
+   73  cd src/
+   74  ls
+   75  clear
+   76  make all -f Makefile.unix 
+   77  clear
+   78  sudp apt install -y libasound2-dev
+   79  sudo apt install -y libasound2-dev
+   80  make all -f Makefile.unix 
+   81  make clean -f Makefile.unix 
+   82  make all -f Makefile.unix 
+   83  clear
+   84  ls
+   85  cd 3rdparty/
+   86  ls
+   87  cd rtmidi/
+   88  ls
+   89  cat README.md 
+   90  ls
+   91  clear
+   92  cd
+   93  clear
+   94  ls
+   95  sudo apt install -y midish
+   96  midish
+   97  aseqdump -l
+   98  cd ..
+   99  ls
+  100  cd ubuntu/
+  101  ls
+  102  clear
+  103  ls
+  104  cd divs-midi-utilities/
+  105  ls
+  106  cd bin/
+  107  ls
+  108  clear
+  109  ls
+  110  cd ..
+  111  ls
+  112  cd src/
+  113  ls
+  114  cd lsmidiins/
+  115  clear
+  116  ls
+  117  cat Makefile.unix 
+  118  make -f Makefile.unix 
+  119  g++ -D__LINUX_ALSA__ -DRTMIDI_DO_NOT_ENSURE_UNIQUE_PORTNAMES -I../3rdparty/rtmidi -c ../3rdparty/rtmidi/RtMidi.cpp
+  120  sudo apt install g++
+  121  cd ..
+  122  clear
+  123  ls
+  124  make clean -f Makefile.unix 
+  125  make all -f Makefile.unix 
+  126  sudo apt install libwxgtk2.8-dev libwxgtk2.8-dbg
+  127  sudo apt find 
+  128  sudo apt --help
+  129  sudo apt search wxgtk
+  130  sudo apt install libwxgtk3.0-gtk3-0v5 libwxgtk3.0-gtk3-dev
+  131  make all -f Makefile.unix 
+  132  sudo apt install libexpat1-dev
+  133  make all -f Makefile.unix 
+  134  ls
+  135  cd ..
+  136  ls
+  137  pwd
+  138  cd ..
+  139  ls
+  140  nano .bashrc
+  141  exit
+  142  cd divs-midi-utilities/
+  143  ls
+  144  exit
+  145  clear
+  146  ls
+  147  cd divs-midi-utilities/bin/
+  148  ls
+  149  lsmidiins 
+  150  lsmidiouts
+  151  dispmidi --in 1
+  152  dispmidi --in CH345
+  153  lsmidiouts
+  154  lsmidiins 
+  155  alsamidicable --list-ports
+  156  dispmidi --in 1
+  157  dispmidi --in 2
+  158  dispmidi --in CH345
+  159  dispmidi --in 1
+  160  sudo shutdown -h now
+  161  ls
+  162  clear
+  163  alsamidicable --list-ports
+  164  lsmidiins 
+  165  dispmidi --in 1
+  166  brainstorm --in 1 --prefix session_ --timeout 10 
+  167  ls
+  168  playsmf --out 1 session_20210305054651.mid 
+  169  lsmidiouts
+  170  clear
+  171  ls
+  172  cat session_20210305054651.mid 
+  173  cd divs-midi-utilities/
+  174  ls
+  175  cd src/
+  176  cd
+  177  brainstorm --in 1 --prefix session_ --timeout 5 --confirmation echo "File Saved: %s"
+  178  brainstorm --in 1 --prefix session_ --timeout 5 --confirmation echo \"File Saved: %s\"
+  179  brainstorm --in 1 --prefix session_ --timeout 5 --confirmation echo File Saved
+  180  brainstorm --in 1 --prefix session_ --timeout 5 --confirmation "echo File saved"
+  181  ls -la
+  182  brainstorm --in 1 --prefix session_ --timeout 5 --confirmation "echo File saved: %s"
+  183  ls -l
+  184  apt search midicsv
+  185  sudo apt install midicsv
+  186  ls
+  187  midicsv --help
+  188  midicsv --?
+  189  midicsv -h
+  190  midicsv
+  191  midicsv -v session_20210305054651.mid debug.csv
+  192  ls
+  193  clear
+  194  ls
+  195  cat debug.csv 
+  196  csvmidi debug.csv test.mid
+  197  LS
+  198  clear
+  199  ls
+  200  history > command_history.txt

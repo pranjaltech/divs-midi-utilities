@@ -1,0 +1,12 @@
+[Unit]
+Description=Brainstorm MIDI Service
+
+[Service]
+Restart=always
+RestartSec=30
+User=ubuntu
+WorkingDirectory=/home/ubuntu/midi-session-data
+ExecStart=/home/ubuntu/midi-utils/run-brainstorm.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+[Unit]
+Description=Check if Brainstorm service needs to be restarted
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/ubuntu/midi-utils/refresh-midi.sh
