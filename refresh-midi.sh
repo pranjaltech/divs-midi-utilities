@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/home/ubuntu/divs-midi-utilities/bin/lsmidiins | grep "reface" >/dev/null && echo "Reface exists" || sudo systemctl restart brainstorm
+/home/ubuntu/divs-midi-utilities/bin/lsmidiins | grep "1 " >/dev/null && echo "MIDI Interface exists" || sudo systemctl restart brainstorm
