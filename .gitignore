@@ -7,3 +7,4 @@ bin/*
 *.ilk
 *.pdb
 *.exe.manifest
+.nova/*
