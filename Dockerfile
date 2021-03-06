@@ -1,6 +1,6 @@
 FROM alpine:latest as builder
 RUN apk update && apk --no-cache add gcc g++ alsa-utils make alsa-lib-dev
-RUN apk --no-cache add gtk+3.0 gtk+3.0-dev expat-dev wxgtk wxgtk-dev
+RUN apk --no-cache add gtk+3.0 gtk+3.0-dev expat-dev wxgtk wxgtk-dev sox libsox-fmt-mp3
 
 FROM builder as build1
 COPY . /usr/
