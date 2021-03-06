@@ -21,4 +21,4 @@ curl --header "Content-Type: application/json" \
   https://discord.com/api/webhooks/817323024348610611/3WiDRgTUXSe4mEE02gSecu0D6dIIy1hoaB9nJQ3y8df8140EJv0F647bKZGXb8z3Q7SX
   
 # Play Audio Ding
-play $HOME/midi-utils/ding_g.mp3
+play $HOME/midi-utils/audio/ding_g.mp3

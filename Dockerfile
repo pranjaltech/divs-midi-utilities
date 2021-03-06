@@ -1,15 +1,12 @@
 FROM alpine:latest as builder
 RUN apk update && apk --no-cache add gcc g++ alsa-utils make alsa-lib-dev
-RUN apk --no-cache add gtk+3.0 gtk+3.0-dev expat-dev wxgtk wxgtk-dev sox libsox-fmt-mp3
+RUN apk --no-cache add gtk+3.0 gtk+3.0-dev expat-dev wxgtk wxgtk-dev 
+# sox libsox-fmt-mp3 <- to play mp3s
 
 FROM builder as build1
 COPY . /usr/
 WORKDIR /usr/src/
 RUN make all -f Makefile.unix
-
-FROM build1 as build2
-WORKDIR /usr/bin/
-ENTRYPOINT ["./lsmidiins"]
 
 # FROM amd64/ubuntu:latest as builder
 # COPY . /usr/
