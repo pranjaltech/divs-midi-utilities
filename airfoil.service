@@ -1,0 +1,12 @@
+[Unit]
+Description=Airfoil Pi
+
+[Service]
+Restart=always
+RestartSec=30
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=airfoilspeakers
+
+[Install]
+WantedBy=multi-user.target
